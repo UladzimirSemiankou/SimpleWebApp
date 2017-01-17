@@ -30,6 +30,11 @@ public class MainServlet extends HttpServlet {
 		resp.addHeader("Access-Control-Allow-Origin", "192.168.56.101:5080");
 		resp.addHeader("Access-Control-Allow_Methods", "*");
 		resp.setCharacterEncoding("UTF-8");
+		try {
+            		System.out.println("TEST_ERROR");
+       		} catch (Exception ex) {
+            		ex.printStackTrace();
+        	}
 	}
 	
 	@Override
